@@ -80,7 +80,7 @@
             <id>fmp</id>
             <goals>
               <goal>app-catalog</goal>
-              <!-- <goal>helm</goal> -->
+              <goal>helm</goal>
             </goals>
           </execution>
         </executions>
