@@ -75,7 +75,7 @@
     <fabric8.console.version>2.2.22</fabric8.console.version>
     <fabric8.devops.version>2.2.258</fabric8.devops.version>
     <fabric8.forge.version>2.3.27</fabric8.forge.version>
-    <fabric8.maven.plugin.version>3.1.38</fabric8.maven.plugin.version>
+    <fabric8.maven.plugin.version>3.1.56</fabric8.maven.plugin.version>
     <maven.require.version>3.1.1</maven.require.version>
     <maven.enforcer.plugin.version>1.4</maven.enforcer.plugin.version>
     <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
