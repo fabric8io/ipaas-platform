@@ -35,11 +35,11 @@
       <artifactId>console</artifactId>
       <version>${fabric8.console.version}</version>
     </dependency>
-    <!--<dependency>
+    <dependency>
       <groupId>io.fabric8.devops.apps</groupId>
       <artifactId>jenkins-openshift</artifactId>
       <version>${fabric8.devops.version}</version>
-    </dependency>-->
+    </dependency>
     <dependency>
       <groupId>io.fabric8.devops.apps</groupId>
       <artifactId>fabric8-docker-registry</artifactId>
