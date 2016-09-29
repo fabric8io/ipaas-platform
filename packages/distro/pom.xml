@@ -32,11 +32,11 @@
   <name>iPaaS :: Platform :: Packages :: Distro</name>
 
   <dependencies>
-    <dependency>
+    <!-- <dependency>
       <groupId>io.fabric8.apps</groupId>
       <artifactId>console</artifactId>
       <version>${fabric8.console.version}</version>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>io.fabric8.devops.apps</groupId>
       <artifactId>jenkins-openshift</artifactId>
