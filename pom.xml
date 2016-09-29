@@ -168,6 +168,7 @@
             <nonFilteredFileExtension>zip</nonFilteredFileExtension>
             <nonFilteredFileExtension>gz</nonFilteredFileExtension>
             <nonFilteredFileExtension>jar</nonFilteredFileExtension>
+            <nonFilteredFileExtension>tar.gz</nonFilteredFileExtension>
           </nonFilteredFileExtensions>
         </configuration>
       </plugin>
