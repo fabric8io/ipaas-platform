@@ -9,6 +9,7 @@ node{
     stage 'Updating dependencies'
     def prId = pipeline.updateDependencies('http://central.maven.org/maven2/')
 
+    echo "here ${prId}"
     stage 'Stage'
     def stagedProject = pipeline.stage()
 

@@ -8,6 +8,11 @@ def updateDependencies(source){
   properties << ['<fabric8.devops.version>','io/fabric8/devops/apps/jenkins']
   properties << ['<fabric8.forge.version>','io/fabric8/devops/apps/jenkins']
 
+  updatePropertyVersion{
+    updates = properties
+    repository = source
+    project = 'fabric8io/ipaas-platform'
+  }
 }
 
 def stage(){
