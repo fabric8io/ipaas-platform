@@ -31,13 +31,6 @@
   <name>iPaaS :: Platform :: Packages :: Platform</name>
   <description>The Fabric8 Microservices Platform</description>
 
-  <dependencies>
-    <dependency>
-      <groupId>io.fabric8.ipaas.platform.packages</groupId>
-      <artifactId>app-catalog</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-  </dependencies>
 
   <build>
     <plugins>
@@ -61,6 +54,33 @@
             </goals>
           </execution>
         </executions>
+        <dependencies>
+          <dependency>
+            <groupId>io.fabric8.ipaas.platform.packages</groupId>
+            <artifactId>console</artifactId>
+            <version>${project.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>io.fabric8.devops.apps</groupId>
+            <artifactId>jenkins-openshift</artifactId>
+            <version>${fabric8.devops.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>io.fabric8.devops.apps</groupId>
+            <artifactId>nexus</artifactId>
+            <version>${fabric8.devops.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>io.fabric8.devops.apps</groupId>
+            <artifactId>gogs</artifactId>
+            <version>${fabric8.devops.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>io.fabric8.forge.apps</groupId>
+            <artifactId>fabric8-forge</artifactId>
+            <version>${fabric8.forge.version}</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>
