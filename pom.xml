@@ -70,7 +70,7 @@
   </scm>
 
   <properties>
-    <fabric8.version>2.2.168</fabric8.version>
+    <fabric8.version>2.2.170</fabric8.version>
     <fabric8.console.version>2.2.187</fabric8.console.version>
     <fabric8.devops.version>2.2.283</fabric8.devops.version>
     <fabric8.forge.version>2.3.58</fabric8.forge.version>
