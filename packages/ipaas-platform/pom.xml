@@ -80,6 +80,11 @@
             <artifactId>fabric8-forge</artifactId>
             <version>${fabric8.forge.version}</version>
           </dependency>
+          <dependency>
+            <groupId>io.fabric8.ipaas</groupId>
+            <artifactId>ipaas-console</artifactId>
+            <version>${ipaas.console.version}</version>
+          </dependency>
         </dependencies>
       </plugin>
     </plugins>
