@@ -2,9 +2,9 @@
 def updateDependencies(source){
 
   def properties = []
-  // properties << ['<fabric8.console.version>','io/fabric8/console']
+
   properties << ['<fabric8.version>','io/fabric8/kubernetes-api']
-  // properties << ['<fabric8.maven.plugin.version>','io/fabric8/fabric8-maven-plugin']
+
   properties << ['<fabric8.devops.version>','io/fabric8/devops/apps/jenkins']
   properties << ['<fabric8.forge.version>','io/fabric8/forge/apps/fabric8-forge']
 
@@ -55,4 +55,36 @@ def mergePullRequest(prId){
   }
 
 }
+
+def approve(project){
+  def releaseVersion = project[1]
+
+  def stagedPlatform = "https://oss.sonatype.org/content/repositories/staging/io/fabric8/ipaas/platform/packages/ipaas-platform/${releaseVersion}/ipaas-platform-${releaseVersion}-openshift.yml"
+
+  def proceedMessage = """
+  The ipaas-platform is available for QA.  Please review and approve.
+
+  minishift
+
+  gofabric8 start --ipaas --package=${stagedPlatform}
+
+  remote
+
+  gofabric8 deploy --package=${stagedPlatform}
+
+  Approve release?
+  """
+
+  hubotApprove message: proceedMessage, room: 'release'
+  def id = approveRequestedEvent(app: "${env.JOB_NAME}", environment: 'community')
+
+  try {
+    input id: 'Proceed', message: "\n${proceedMessage}"
+  } catch (err) {
+    approveReceivedEvent(id: id, approved: false)
+    throw err
+  }
+  approveReceivedEvent(id: id, approved: true)
+}
+
 return this;
