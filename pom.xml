@@ -75,7 +75,7 @@
     <fabric8.devops.version>2.2.297</fabric8.devops.version>
     <fabric8.forge.version>2.3.73</fabric8.forge.version>
     <fabric8.maven.plugin.version>3.1.92</fabric8.maven.plugin.version>
-    <ipaas.console.version>0.0.8</ipaas.console.version>
+    <ipaas.console.version>0.0.9</ipaas.console.version>
     <maven.require.version>3.1.1</maven.require.version>
     <maven.enforcer.plugin.version>1.4</maven.enforcer.plugin.version>
     <maven.javadoc.plugin.version>2.10.3</maven.javadoc.plugin.version>
